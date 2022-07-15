@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!-- <input type="text" onchange="betterFunction()"/> -->
+        <!-- <input type="text" onchange="betterFunction()"/>
+        <button id="myid" onclick="newFun() ">Hello</button> -->
+         <h1>UserSnap</h1>
+        <script>
+            window.onUsersnapCXLoad = function(api) {
+              api.init();
+            }
+            var script = document.createElement('script');
+            script.defer = 1;
+            script.src = 'https://widget.usersnap.com/global/load/350eada3-c7eb-4e06-8400-55e1f189e3b6?onload=onUsersnapCXLoad';
+            document.getElementsByTagName('head')[0].appendChild(script);
+          </script>
+          
+        <!-- <script src="Debouncing.js" async defer></script> -->
+        <!-- <script src="Throtling.js" async defer></script> -->
+    </body>
+</html>
